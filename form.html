@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Telkom Company</title>
+        <link rel="stylesheet" href="form.css" />
+    </head>
+    <body>
+        <div class="wrapper">
+            <div class="menu">
+                <nav>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#profile">Profile</a></li>
+                        <li><a href="#form">Form</a></li>
+                    </ul>
+                </nav>
+            </div>
+        <div class="wrapper">
+
+        <section id="home">
+            <img src="https://i.pinimg.com/564x/56/de/77/56de7713203eb20e59111ca0fe7f33bd.jpg"/>
+            <h1 class="main">Telkom Company Open Recruitment</h1>
+            <h2>We're hiring for our new team. Want to join?</br>
+                Recruitment for expert professionals in the digital field with a minimum of 5 years experience</h2>
+            <p>The fields that we need</br>
+               1. Front end</br>
+               2. Back end</br>
+               3. Software Architect</br>
+               4. Quality Asurance</br>
+               5. Document Engineer</br>
+               6. Android Developer</br>
+               7. iOS Developer</p>
+        </div>
+        </section>
+
+        <section id="profile">
+            <h1 class="main">Tentang Telkom</h1>
+            <p>PT Telkom Indonesia (Persero) Tbk (Telkom) adalah Badan Usaha Milik Negara (BUMN) yang bergerak di bidang jasa layanan teknologi informasi dan komunikasi (TIK) dan jaringan telekomunikasi di Indonesia. Pemegang saham mayoritas Telkom adalah Pemerintah Republik Indonesia sebesar 52.09%, sedangkan 47.91% sisanya dikuasai oleh publik. Saham Telkom diperdagangkan di Bursa Efek Indonesia (BEI) dengan kode “TLKM” dan New York Stock Exchange (NYSE) dengan kode “TLK”.</br>
+               Dalam upaya bertransformasi menjadi digital telecommunication company, TelkomGroup mengimplementasikan strategi bisnis dan operasional perusahaan yang berorientasi kepada pelanggan (customer-oriented). Transformasi tersebut akan membuat organisasi TelkomGroup menjadi lebih lean (ramping) dan agile (lincah) dalam beradaptasi dengan perubahan industri telekomunikasi yang berlangsung sangat cepat. Organisasi yang baru juga diharapkan dapat meningkatkan efisiensi dan efektivitas dalam menciptakan customer experience yang berkualitas.</br>
+               </br>
+               Telkom mulai saat ini membagi bisnisnya menjadi 3 Digital Business Domain:</br>
+               1. Digital Connectivity: Fiber to the x (FTTx), 5G, Software Defined Networking (SDN)/ Network Function Virtualization (NFV)/ Satellite</br>
+               2. Digital Platform: Data Center, Cloud, Internet of Things (IoT), Big Data/ Artificial Intelligence (AI), Cybersecurity</br>
+               3. Digital Services: Enterprise, Consumer</p>>
+        </section>
+
+        <section id="form">
+            <h1 class="main">Interested to join with us?</h1>
+            <h2>Registration Form</h2>
+            <form name="Pendaftaran" action="">
+                <p>
+                    Nama: <br>
+                    <input type="text" name="nama"/>
+                </p>
+
+                <p>
+                    Nomor Handphone: <br>
+                    <input type="number" name="nomor handphone"/>
+                </p>
+                
+                <p>
+                    Email: <br>
+                    <input type="text" name="email"/>
+                </p>
+
+                <p>
+                    Pendidikan: <br>
+                    <input type="text" name="pendidikan"/>
+                </p>
+
+                <p>
+                    Asal Universitas: <br>
+                    <input type="text" name="asal universitas"/>
+                </p>
+
+                <p>
+                    Bidang: <br>
+                    <select name="bidang">
+                        <option value="front end">Front end</option>
+                        <option value="back end">Back end</option>
+                        <option value="software architect">Software Architect</option>
+                        <option value="quality assurance">Quality Assurance</option>
+                        <option value="document engineer">Document Engineer</option>
+                        <option value="android developer">Android Developer</option>
+                        <option value="ios developer">iOS Developer</option>
+                    </select>
+                </p>
+
+                <p>
+                    Background sekolah: <br>
+                    <textarea name="background sekolah"></textarea>
+                </p>
+
+                <p>
+                    Sertifikat Internasional: <br>
+                    <textarea name="sertifikat internasional"></textarea>
+                </p>
+
+                <p>
+                    Portofolio: <br>
+                    <textarea name="portofolio"></textarea>
+                </p>
+
+                <p>
+                    Silahkan upload cv kamu: <br>
+                    <input type="file">
+                </p>
+
+                <input type="button" class="btn" value="submit" onclick="input()">
+
+                <p id="result"></p>
+    
+            </form>
+
+        </section>
+
+        <script type="text/javascript" >
+
+            function hasil(){
+
+                
+                if (document.forms["Pendaftaran"]["nama"].value == ""){
+                    alert("Nama Tidak Boleh Kosong");
+                    document.forms["Pendaftaran"]["nama"].focus();
+                    return false;
+                }
+                if (document.forms["Pendaftaran"]["nomor handphone"].value == ""){
+                    alert("Nomor handphone Tidak Boleh Kosong");
+                    document.forms["Pendaftaran"]["nomor handphone"].focus();
+                    return false;
+                }
+                if (document.forms["Pendaftaran"]["email"].value == ""){
+                    alert("Email Tidak Boleh Kosong");
+                    document.forms["Pendaftaran"]["email"].focus();
+                    return false;
+                }
+                if (document.forms["Pendaftaran"]["pendidikan"].value == ""){
+                    alert("Pendidikan Tidak Boleh Kosong");
+                    document.forms["Pendaftaran"]["pendidikan"].focus();
+                    return false;
+                }
+                if (document.forms["Pendaftaran"]["asal universitas"].value == ""){
+                    alert("Asal universitas Tidak Boleh Kosong");
+                    document.forms["Pendaftaran"]["asal universitas"].focus();
+                    return false;
+                }
+            }
+
+                function cetak(){
+                var nama = document.getElementById("nama").value ;
+                var nomor = document.getElementById("nomor handphone").value ;
+                var email = document.getElementById("email").value ;
+                var pendidikan = document.getElementById("pendidikan").value ;
+                var asal = document.getElementById("asal universitas").value ;
+                var bidang = document.getElementById("bidang").value ;
+                var background = document.getElementById("background sekolah").value ;
+                var sertif = document.getElementById("sertifikat internasional").value ;
+                var portofolio = document.getElementById("portofolio").value ;
+
+                document.write(nama + "</br>" + nomor + "</br>" + email + "</br>" + pendidikan + "</br>" + asal + "</br>" + bidang + "</br>" + background + "</br>" + sertif + "</br>" + portofolio + "</br>") ;
+                
+                }
+            
+                function input(){
+                    hasil();
+                    cetak();
+                }
+            
+            
+
+        </script>
+
+        <footer>
+            <p name='center'>Kelompok 7 TEFAPWT</p>
+        </footer>
+</body>
+</html>
